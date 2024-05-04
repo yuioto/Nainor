@@ -12,8 +12,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install Archlinux
       run: curl -L https://github.com/zaoqi/github-actions-archlinux/raw/master/install.sh | sh
-    - uses: taiki-e/install-action@just
+    - name: install archiso and just
+       sudo pacman -S --needed archiso just
     - name: build
-      run: |
-       sudo pacman -S --needed archiso
+      run:
        just build
