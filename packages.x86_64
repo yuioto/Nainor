@@ -1,4 +1,3 @@
-alsa-utils
 amd-ucode
 arch-install-scripts
 archinstall
@@ -129,3 +128,7 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+
+# Desktop
+cosmic-epoch-git
+lemurs
