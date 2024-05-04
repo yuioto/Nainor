@@ -132,3 +132,6 @@ zsh
 # Desktop
 cosmic-epoch-git
 lemurs
+
+# tools
+fastfetch
