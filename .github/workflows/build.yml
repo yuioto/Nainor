@@ -13,7 +13,8 @@ jobs:
     - name: Install Archlinux
       run: curl -L https://github.com/zaoqi/github-actions-archlinux/raw/master/install.sh | sh
     - name: install archiso and just
-      run: sudo pacman -S --needed archiso just
+      run: pacman -S --needed archiso just
     - name: build
       run:
-       just build
+       #just build
+       sudo mkarchiso -v -w work -o out .
